@@ -3,14 +3,39 @@ html, body {
   color: white;
 }
 .container-fluid {
-  background-color: #472E32;
+  /* background-color: #472E32; */
   height: 100%;
   padding-top: 100px;
   padding-bottom: 30px;
   overflow: auto;
+  background-image: url("../images/globe.jpeg");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  animation: animatedBackground 40s linear infinite;
 }
 
 button {
   background-color: #472E32;
   color: white;
+}
+
+#quote {
+  color: #472E32;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#author {
+  color: #472E32;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#message {
+  color: #472E32;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
